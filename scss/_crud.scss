@@ -1,0 +1,128 @@
+$back-color: #efefef;
+$purple: #6f42c1;
+$white: #ffff;
+
+.crud-container {
+    border-radius: 4px;
+    padding: 16px;
+    margin-bottom: 4px;
+    box-sizing: border-box;
+    background-color: $white;
+
+    .crud-toolbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: $back-color;
+        border: 1px solid #dee2e6;
+        padding: 1rem 1.25rem;
+        border-radius: 4px;
+
+        .crud-toolbar-left {
+            button {
+                margin-right: 0.5rem;
+                padding: 0.5rem 0.75rem;
+                font-size: 1rem;
+                transition: background-color 0.15s, border-color 0.15s, box-shadow 0.15s;
+                border-radius: 4px;
+                cursor: pointer;
+                color: #ffffff;
+                background: #28a745;
+                border: 1px solid #28a745;
+
+                i {
+                    margin-right: 5px;
+                }
+            }
+            button:last-child {
+                background: #dc3545;
+                border: 1px solid #dc3545;
+            }
+        }
+
+        .crud-toolbar-right {
+            button {
+                margin-right: 0.5rem;
+                padding: 0.5rem 0.75rem;
+                font-size: 1rem;
+                transition: background-color 0.15s, border-color 0.15s, box-shadow 0.15s;
+                border-radius: 4px;
+                cursor: pointer;
+                color: #ffffff;
+                background: #6f42c1;
+                border: 1px solid #6f42c1;
+
+                i {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
+    .crud-data {
+        margin-top: 20px;
+
+        .crud-data-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #efefef;
+            color: #212529;
+            border: solid #dee2e6;
+            border-width: 1px 0 0 0;
+            padding: 1rem 1rem;
+            font-weight: 600;
+
+            h5 {
+                font-size: large;
+                font-weight: 500;
+                line-height: 1.2;
+            }
+
+            form {
+                background-color: #efefef;
+
+                i {
+                    position: relative;
+                    margin-top: -0.5rem;
+                    left: 2rem;
+                    color: #495057;
+                }
+
+                input {
+                    background-color: #efefef;
+                    font-size: 1rem;
+                    color: #495057;
+                    background: $white;
+                    padding: 0.5rem 0.7rem;
+                    padding-left: 2.5rem;
+                    border: 1px solid #ced4da;
+                    transition: background-color 0.15s, border-color 0.15s, box-shadow 0.15s;
+                    appearance: none;
+                    border-radius: 4px;
+                }
+            }
+        }
+
+        .crud-data-table{
+            overflow-x: auto;
+
+            thead{
+                padding-top: 10px;
+
+                tr{
+                    display: flex;
+                    align-items: center;
+
+                    td{
+                        display: flex;
+                        align-items: center;
+
+                        input{
+                            padding: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,135 @@
+$back-color: #efefef;
+$purple: #6f42c1;
+$white: #ffff;
+
+html {
+    scroll-behavior: smooth;
+}
+.landing-page-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 560px;
+    margin-bottom: 50px;
+
+    #background-img {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    h1,
+    h2 {
+        margin: 15px;
+    }
+
+    .landing-page-header {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 50px;
+
+        .landing-page-navbar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+
+            a {
+                margin: 10px;
+                font-size: 16px;
+                text-decoration: none;
+                color: $white;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+
+        img {
+            margin-left: 240px;
+        }
+    }
+}
+.landing-page-features {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    justify-content: space-evenly;
+    width: 100%;
+
+    .feature-content {
+        margin-bottom: 20px;
+        width: 40%;
+
+        h3,
+        p,
+        img {
+            margin: 8px;
+        }
+    }
+}
+.landing-page-events {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    background: radial-gradient(circle at 50% 50%, #6d6d7e, #3b3b48);
+
+    .event-card {
+        width: 30%;
+        margin: 20px;
+        padding: 30px;
+
+        img {
+            margin-bottom: 10px;
+        }
+    }
+    .event-card:nth-child(1) {
+        background-color: #a83279;
+    }
+    .event-card:nth-child(2) {
+        background-color: #457fca;
+    }
+    .event-card:nth-child(3) {
+        background-color: #563d7c;
+    }
+}
+.landing-page-prices {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 400px;
+
+    .price-content {
+        padding: 30px;
+
+        h3, {
+            margin: 18px 0;
+            font-size: 20px;
+        }
+        p,span{
+            font-size: 16px;
+        }
+        ul {
+            margin:10px 0 10px 40px;
+        }
+        button {
+            padding: 0.429em 0.857em;
+            background-color: #337ab7;
+            color: $white;
+            text-align: center;
+            border: 0 none;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 15px;
+        }
+        button:hover{
+            background-color: #2a6191;
+
+        }
+    }
+}

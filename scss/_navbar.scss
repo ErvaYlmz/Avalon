@@ -1,0 +1,111 @@
+$purple: #6f42c1;
+$white: #ffff;
+
+nav {
+    position: fixed;
+    overflow: auto;
+    width: 235px;
+    height: 100%;
+    top: 60px;
+    z-index: 9;
+    transition: all 0.2s;
+    background-color: $white;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+
+        li:first-child {
+            padding: 13px 5px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        li {
+            display: flex;
+            width: 100%;
+            list-style-type: none;
+
+            .person-info {
+                padding: 0px;
+
+                a {
+                    display: flex;
+                    flex-direction: row;
+                    text-decoration: none;
+
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 100%;
+                        background-color: rgba(255, 228, 196, 0.534);
+                    }
+
+                    .person-data {
+                        padding-left: 0.5rem;
+
+                        h6 {
+                            display: inline;
+                            vertical-align: middle;
+                            line-height: 2;
+                            font-size: 16px;
+                            font-weight: bold;
+                            color: black;
+                            margin-top: 4px;
+                        }
+
+                        span {
+                            display: block;
+                            font-size: 12px;
+                            color: #6c757d;
+                        }
+                    }
+                }
+            }
+
+            p {
+                margin-top: 14px;
+                padding: 10px 15px;
+                width: 100%;
+                font-weight: bolder;
+                color: #212529a2;
+            }
+
+            a {
+                display: inline-block;
+                width: 100%;
+                text-decoration: none;
+                margin: 0 15px;
+                color: #212529;
+
+                i {
+                    width: 18px;
+                    height: 16px;
+                    margin: 9px 10px 9px 15px;
+                    font-size: 16px;
+                    color: #212529;
+                }
+            }
+
+            a:hover {
+                color: $purple;
+
+                i {
+                    color: $purple;
+                }
+            }
+        }
+    }
+}
+nav.active {
+    left: -235px;
+    transition: 0.2s all;
+}
+
+@media screen and (max-width: 1025px) {
+    nav.active {
+        left: -235px;
+        transition: 0.2s;
+    }
+}

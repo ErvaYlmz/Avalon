@@ -1,0 +1,200 @@
+$purple: #6f42c1;
+$white: #ffff;
+
+.invoice-container {
+    button {
+        color: $white;
+        background: $purple;
+        border: 1px solid $purple;
+        padding: 0.5rem 0.75rem;
+        margin: 10px;
+        font-size: 14px;
+        border-radius: 4px;
+        cursor: pointer;
+
+        i {
+            margin-right: 6px;
+        }
+    }
+
+    .invoice-header {
+        display: flex;
+        flex-direction: row;
+        padding: 40px;
+        background-color: #a98eda;
+
+        .invoice-header-left {
+            display: inline;
+            width: 50%;
+            text-align: left;
+
+            img {
+                margin-bottom: 5px;
+            }
+        }
+        .invoice-header-right {
+            display: inline-block;
+            width: 50%;
+            text-align: right;
+
+            h1 {
+                margin-top: 10px;
+                font-size: 24px;
+                color: #212529;
+            }
+            p {
+                margin: 18px 0;
+                line-height: 1.5;
+            }
+        }
+    }
+
+    .invoice-info {
+        padding: 0px;
+        margin-bottom: 42px;
+        width: 100%;
+        background-color: $white;
+
+        .invoice-info-card {
+            background-color: transparent;
+            display: flex;
+
+            div {
+                display: flex;
+                padding: 0 40px;
+                width: 33%;
+
+                h2 {
+                    display: inline;
+                    font-size: 12px;
+                    font-weight: 700;
+                    color: #212529;
+                    background-color: $white;
+                    padding: 10px;
+                    border-radius: 4px;
+                }
+            }
+        }
+
+        .invoice-info-content {
+            display: flex;
+            flex-direction: row;
+            margin-top: -18px;
+            padding: 40px;
+            font-weight: 500;
+            background-color: $white;
+
+            div {
+                margin-right: 40px;
+                text-align: left;
+                width: 33%;
+            }
+            div:nth-child(3),
+            div:nth-child(4) {
+                text-align: center;
+            }
+        }
+
+        hr {
+            border: none;
+            border-top: 1px dashed rgba(0, 0, 0, 0.22);
+            color: $white;
+            background-color: $white;
+            margin: 50px;
+            height: 50px;
+        }
+
+        table {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+
+            thead {
+                padding: 0 50px;
+
+                tr {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px;
+
+                    td {
+                        text-align: center;
+                        width: 25%;
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                    td:first-child {
+                        text-align: left;
+                    }
+                }
+            }
+            tbody {
+                margin: 10px 0;
+                padding: 0 50px;
+
+                tr {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px;
+
+                    td {
+                        text-align: center;
+                        width: 25%;
+                        font-size: 14px;
+                        padding: 10px 0;
+                    }
+                    td:last-child {
+                        color: $purple;
+                    }
+                    td:first-child {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+
+        .invoice-bank-info {
+            .invoice-bank-card {
+                display: flex;
+                width: 100%;
+                height: 60px;
+                background-color: #a98eda;
+
+                .invoice-bank-right {
+                    display: flex;
+                    align-items: center;
+                    justify-content: right;
+                    width: 50%;
+                    padding-right: 60px;
+
+                    h2 {
+                        font-size: 12px;
+                        font-weight: 700;
+                        color: #212529;
+                        background-color: $white;
+                        padding: 10px;
+                        display: inline;
+                        border-radius: 4px;
+                    }
+                }
+                .invoice-bank-left {
+                    display: flex;
+                    align-items: center;
+                    width: 50%;
+                    padding-left: 50px;
+
+                    h2 {
+                        font-size: 12px;
+                        font-weight: 700;
+                        color: #212529;
+                        background-color: $white;
+                        padding: 10px;
+                        display: inline;
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/style.css" />
+    <script
+      src="https://kit.fontawesome.com/2995b03cec.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Invoice</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <a href="#">
+          <img
+            src="https://www.primefaces.org/avalon-ng/assets/layout/images/logo.png"
+            alt="Avalon Logo"
+          />
+        </a>
+      </div>
+
+      <!-- <div class="menu-button" id="menu"><i class="fa-solid fa-bars"></i></div> -->
+
+      <div class="header-right">
+        <div class="navbar-button" id="navbar-button">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+
+        <div class="header-action">
+          <form class="search-button" action="action_page.php">
+            <input type="text" placeholder="Search" name="search" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </form>
+
+          <div class="notifications">
+            <div>
+              <a href="#"><i class="fa-regular fa-bell"></i></a>
+            </div>
+            <div>
+              <a href="#"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+            <div>
+              <a href="#"><i class="fa-solid fa-gear"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-button"><i class="fa-solid fa-bars"></i></div>
+      </div>
+    </header>
+
+    <div class="background" id="background"></div>
+
+    <nav id="navbar">
+      <ul>
+        <li>
+          <div class="person-info">
+            <a href="#">
+              <img
+                src="https://cdn2.iconfinder.com/data/icons/4web-3/139/header-account-image-line-512.png"
+                alt="photo"
+              />
+              <div class="person-data">
+                <h6>Peter Griffin</h6>
+                <span>Webmaster</span>
+              </div>
+            </a>
+          </div>
+        </li>
+
+        <li>
+          <p>FAVORITES</p>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-house"></i>Dashboard</a>
+        </li>
+
+        <li>
+          <p>UI KIT</p>
+        </li>
+        <li>
+          <a href="login.html"
+            ><i class="fa-solid fa-address-card"></i>Form Layout</a
+          >
+        </li>
+        <li>
+          <a href="error.html"
+            ><i class="fa-solid fa-check-to-slot"></i>Input</a
+          >
+        </li>
+        <li>
+          <a href="invoice.html"
+            ><i class="fa-solid fa-bookmark"></i>Float Label</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fa-solid fa-circle-exclamation"></i>Invalid State</a
+          >
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-square"></i>Button</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-table"></i>Table</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-list"></i>List</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-diagram-project"></i>Tree</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-mobile-button"></i>Panel</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-copy"></i>Overlay</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-photo-film"></i>Media</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-bars"></i>Menu</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-comment"></i>Message</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-file"></i>File</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-chart-simple"></i>Chart</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-regular fa-circle"></i>Misc</a>
+        </li>
+
+        <li>
+          <p>PRIME BLOCKS</p>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-eye"></i>Free Blocks</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-globe"></i>All Blocks</a>
+        </li>
+
+        <li>
+          <p>UTILITIES</p>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-laptop"></i>PrimeIcons</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-laptop"></i>PrimeFlex</a>
+        </li>
+
+        <li>
+          <p>PAGES</p>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-pen"></i>Crud</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-calendar-days"></i>Calender</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-calendar"></i>Timeline</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-user-plus"></i>Landing</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-right-to-bracket"></i>Login</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-dollar-sign"></i>Invoice</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-circle-question"></i>Help</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-circle-xmark"></i>Error</a>
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fa-solid fa-circle-exclamation"></i>Not Found</a
+          >
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-lock"></i>Access Denied</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-regular fa-circle"></i>Empty</a>
+        </li>
+
+        <li>
+          <p>HIERARCHY</p>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-bars"></i>Submenu 1</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-bars"></i>Submenu 2</a>
+        </li>
+
+        <li>
+          <p>START</p>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i>Buy Now</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-circle-info"></i>Documantation</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main">
+      <div class="invoice-container">
+        <button><i class="fa-solid fa-print"></i>Print</button>
+
+        <div class="invoice-header">
+          <div class="invoice-header-left">
+            <img
+              src="https://www.primefaces.org/avalon-react/assets/layout/images/extensions/prime-logo.svg"
+              alt="avalon-layout"
+            />
+            <p>9137 3rd Lane California City, CA 93504.</p>
+          </div>
+
+          <div class="invoice-header-right">
+            <h1 class="title">INVOICE</h1>
+            <p>30/08/2019</p>
+          </div>
+        </div>
+
+        <div class="invoice-info">
+          <div class="invoice-info-card">
+            <div><h2>BILL TO</h2></div>
+            <div><h2>DATE</h2></div>
+            <div><h2>INVOICE NO</h2></div>
+            <div><h2>NOTES</h2></div>
+          </div>
+
+          <div class="invoice-info-content">
+            <div>
+              <p>
+                TOYOKSU SYSCOM CORPORATION 11-27, MEIEKI 4-CHROME NAKAMURA-KU,
+                NAGOYA 450-0002 JAPAN
+              </p>
+            </div>
+            <div><p>30/08/2019</p></div>
+            <div><p>A/3100</p></div>
+            <div><p>N/A</p></div>
+          </div>
+
+          <hr />
+
+          <table>
+            <thead>
+              <tr>
+                <td>DESCRIPTION</td>
+                <td>QUANTITY</td>
+                <td>UNIT PRICE</td>
+                <td>LINE TOTAL</td>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>1 Year PrimeFaces Elite Subscription</td>
+                <td>4</td>
+                <td>$99.00</td>
+                <td>$396.00</td>
+              </tr>
+
+              <tr>
+                <td>PrimeFaces Avalon Extended License</td>
+                <td>1</td>
+                <td>$790.00</td>
+                <td>$790.00</td>
+              </tr>
+
+              <tr>
+                <td>PrimeFaces Prestige Basic License</td>
+                <td>2</td>
+                <td>$59.00</td>
+                <td>$118.0</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr />
+
+          <div class="invoice-bank-info">
+            <div class="invoice-bank-card">
+              <div class="invoice-bank-left"><h2>BANK</h2></div>
+              <div class="invoice-bank-right"><h2>TOTAL</h2></div>
+            </div>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Bank</td>
+                        <td>BestBank</td>
+                        <td>Subtotal</td>
+                        <td>$1304.00</td>
+                    </tr>
+                    <tr>
+                        <td>Account Beneficiary</td>
+                        <td>Edward Williams</td>
+                        <td>VAT</td>
+                        <td>$234.72</td>
+                    </tr>
+                    <tr>
+                        <td>Swift</td>
+                        <td>PJNWBXND</td>
+                        <td>Total</td>
+                        <td>$1538.72</td>
+                    </tr>
+                    <tr>
+                        <td>IBAN</td>
+                        <td>GB04420235692263866724650931</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div>
+          <a href="#">
+            <img
+              src="https://www.primefaces.org/avalon-ng/assets/layout/images/logo-dark.png"
+              alt="Avalon Logo"
+            />
+          </a>
+        </div>
+
+        <div class="notifications">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      const navbarbtn = document.getElementById("navbar-button");
+      const navbar = document.getElementById("navbar");
+      const main = document.getElementById("main");
+      const background = document.getElementById("background");
+
+      navbarbtn.onclick = function () {
+        navbarbtn.classList.toggle("active");
+        navbar.classList.toggle("active");
+        main.classList.toggle("active");
+        background.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
